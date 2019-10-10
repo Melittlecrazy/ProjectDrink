@@ -339,7 +339,7 @@ FixedJoint2D:
   m_GameObject: {fileID: 807235315}
   m_Enabled: 1
   serializedVersion: 4
-  m_EnableCollision: 0
+  m_EnableCollision: 1
   m_ConnectedRigidBody: {fileID: 1535056751}
   m_BreakForce: Infinity
   m_BreakTorque: Infinity
@@ -376,7 +376,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807235315}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -469,6 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15548da93036a5d4f9c93ca099d6c1e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 1
 --- !u!1 &978106705
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,6 +630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15548da93036a5d4f9c93ca099d6c1e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 0.1
 --- !u!1001 &1028080252
 PrefabInstance:
   m_ObjectHideFlags: 0

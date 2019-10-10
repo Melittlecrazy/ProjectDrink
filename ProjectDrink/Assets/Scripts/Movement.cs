@@ -4,27 +4,35 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-        private float moveSpeed = 0.1f;
+    public float moveSpeed = 0.1f;
+
+    private Rigidbody2D rigidbody;
+
+    private float verticalInput;
 
     // Start is called before the first frame update
     void Start()
     {
         Debug.Log("yo what up!");
         //transform.Translate(0,5,0);
+
+        rigidbody = GetComponent<Rigidbody2D>();
+        //rigidbody.velocity = new Vector2(1, 0);
+
+        
+    }
+
+    //use fixedupdate for physics
+    private void FixedUpdate()
+    {
+        verticalInput = Input.GetAxis("Vertical");
+        rigidbody.velocity = new Vector2(0, verticalInput * moveSpeed);
     }
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
-    
-        //if player presses up arrow, we move the square up
-        if (Input.GetKey(KeyCode.UpArrow))
-        {
-            transform.Translate(0,moveSpeed,0);
-        }
-        else if (Input.GetKey(KeyCode.DownArrow))
-        {
-            transform.Translate(0, -moveSpeed, 0);
-        }
+        transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);  
     }
+    */
 }
