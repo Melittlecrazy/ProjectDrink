@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
     public float moveSpeed = 0.1f;
 
     private Rigidbody2D rigidbody;
-
+    public string inputAxis;
     private float verticalInput;
 
     // Start is called before the first frame update
@@ -17,22 +17,21 @@ public class Movement : MonoBehaviour
         //transform.Translate(0,5,0);
 
         rigidbody = GetComponent<Rigidbody2D>();
-        //rigidbody.velocity = new Vector2(1, 0);
-
-        
+        //rigidbody.velocity = new Vector2(1, 0);   
     }
 
     //use fixedupdate for physics
     private void FixedUpdate()
     {
-        verticalInput = Input.GetAxis("Vertical");
+        
         rigidbody.velocity = new Vector2(0, verticalInput * moveSpeed);
     }
 
     // Update is called once per frame
-    /*void Update()
+    void Update()
     {
-        transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);  
+        verticalInput = Input.GetAxis(inputAxis);
+        //transform.Translate(Vector3.right * moveSpeed * Time.deltaTime);  
     }
-    */
+    
 }
