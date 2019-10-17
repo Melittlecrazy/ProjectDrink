@@ -345,7 +345,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.47853106, y: -0.089999676}
+  m_ConnectedAnchor: {x: 0.48519772, y: 0.0069999695}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!50 &807235317
@@ -363,7 +363,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -451,8 +451,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 807235315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.47, y: -4.39, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: 8.588, y: -4.293, z: 0}
+  m_LocalScale: {x: 0.5060175, y: 0.9826525, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -469,7 +469,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15548da93036a5d4f9c93ca099d6c1e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 1
+  moveSpeed: 10
+  inputAxis: RightVertical
 --- !u!1 &978106705
 GameObject:
   m_ObjectHideFlags: 0
@@ -483,6 +484,7 @@ GameObject:
   - component: {fileID: 978106708}
   - component: {fileID: 978106707}
   - component: {fileID: 978106706}
+  - component: {fileID: 978106711}
   - component: {fileID: 978106712}
   m_Layer: 0
   m_Name: Left
@@ -506,7 +508,7 @@ FixedJoint2D:
   m_BreakTorque: Infinity
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: -0.47853106, y: -0.089999676}
+  m_ConnectedAnchor: {x: -0.48378527, y: 0.0069999695}
   m_DampingRatio: 0
   m_Frequency: 0
 --- !u!50 &978106707
@@ -524,7 +526,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -537,7 +539,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978106705}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -612,12 +614,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978106705}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.47, y: -4.39, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: -8.563, y: -4.293, z: 0}
+  m_LocalScale: {x: 0.5060175, y: 0.9826525, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &978106711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978106705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79576377082d0ef4aa6a6492d3d6dd07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  rigidbody: {fileID: 0}
+  verticalInput: 0
 --- !u!114 &978106712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -630,7 +647,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15548da93036a5d4f9c93ca099d6c1e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.1
+  moveSpeed: 10
+  inputAxis: LeftVertical
 --- !u!1001 &1028080252
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -656,7 +674,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 38972d9a807375f4fbdbf2e076aa183f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 3.83
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 38972d9a807375f4fbdbf2e076aa183f,
         type: 3}
@@ -718,7 +736,7 @@ ConstantForce2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1189913454}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Force: {x: 0, y: 0}
   m_RelativeForce: {x: -52, y: 50}
   m_Torque: 500
@@ -734,7 +752,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -958,7 +976,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -1317,7 +1335,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
