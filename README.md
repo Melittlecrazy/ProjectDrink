@@ -8,8 +8,8 @@
 
 
 ## Assits and sprites used
-https://piratepoots.itch.io/dungeon-starter
-https://oco.itch.io/medieval-fantasy-character-pack
-https://jesse-m.itch.io/skeleton-pack
-https://stealthix.itch.io/animated-fires
-https://ppeldo.itch.io/2d-pixel-art-game-spellmagic-fx
+### Background: https://piratepoots.itch.io/dungeon-starter
+### Goal: https://oco.itch.io/medieval-fantasy-character-pack, https://jesse-m.itch.io/skeleton-pack
+### Ball: https://stealthix.itch.io/animated-fires
+### Goal reached/selected effect: https://ppeldo.itch.io/2d-pixel-art-game-spellmagic-fx
+### Ramp: To Be Decided
