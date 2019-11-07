@@ -8,7 +8,7 @@
 
 
 ## Assits and sprites used
-### Background: https://piratepoots.itch.io/dungeon-starter
+### Background: https://szadiart.itch.io/rogue-fantasy-castle
 ### Goal: https://oco.itch.io/medieval-fantasy-character-pack, https://jesse-m.itch.io/skeleton-pack
 ### Ball: https://stealthix.itch.io/animated-fires
 ### Goal reached/selected effect: https://ppeldo.itch.io/2d-pixel-art-game-spellmagic-fx
