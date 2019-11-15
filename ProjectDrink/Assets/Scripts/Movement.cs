@@ -23,8 +23,11 @@ public class Movement : MonoBehaviour
     //use fixedupdate for physics
     private void FixedUpdate()
     {
-        
+        if (!GameOver.IsGameOver)
+        {
+
         rigidbody.velocity = new Vector2(0, verticalInput * moveSpeed);
+        }
     }
 
     // Update is called once per frame

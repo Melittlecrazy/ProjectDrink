@@ -20,6 +20,7 @@ public class Obstical : MonoBehaviour
         {
             audioSource.Play();
             loseText.SetActive(true);
+            GameOver.IsGameOver = true;
         }
     }
 }
