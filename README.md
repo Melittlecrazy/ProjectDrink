@@ -13,4 +13,4 @@
 ### Obstical: https://jesse-m.itch.io/skeleton-pack
 ### Ball: https://stealthix.itch.io/animated-fires
 ### Goal reached/selected effect: https://ppeldo.itch.io/2d-pixel-art-game-spellmagic-fx
-### Ramp: To Be Decided
+### Ramp(technically): https://jokentertainment.itch.io/evil-sourcerer
