@@ -6,7 +6,7 @@ public class Movement : MonoBehaviour
 {
     public float moveSpeed = 0.1f;
 
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rigibod;
     public string inputAxis;
     private float verticalInput;
 
@@ -16,7 +16,7 @@ public class Movement : MonoBehaviour
         Debug.Log("yo what up!");
         //transform.Translate(0,5,0);
 
-        rigidbody = GetComponent<Rigidbody2D>();
+        rigibod = GetComponent<Rigidbody2D>();
         //rigidbody.velocity = new Vector2(1, 0);   
     }
 
@@ -26,7 +26,7 @@ public class Movement : MonoBehaviour
         if (!GameOver.IsGameOver)
         {
 
-        rigidbody.velocity = new Vector2(0, verticalInput * moveSpeed);
+        rigibod.velocity = new Vector2(0, verticalInput * moveSpeed);
         }
     }
 
