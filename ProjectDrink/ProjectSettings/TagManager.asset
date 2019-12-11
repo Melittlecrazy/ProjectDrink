@@ -44,3 +44,6 @@ TagManager:
   - name: Art
     uniqueID: 996661369
     locked: 0
+  - name: Control menu
+    uniqueID: 3894909507
+    locked: 0
