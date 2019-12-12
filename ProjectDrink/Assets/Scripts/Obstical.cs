@@ -6,6 +6,7 @@ public class Obstical : MonoBehaviour
 {
 
     public GameObject loseText;
+    public GameObject Reset;
     private AudioSource audioSource;
 
     private void Start()
@@ -20,6 +21,7 @@ public class Obstical : MonoBehaviour
         {
             audioSource.Play();
             loseText.SetActive(true);
+            Reset.SetActive(true);
             GameOver.IsGameOver = true;
         }
     }

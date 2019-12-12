@@ -8,5 +8,6 @@ public class LoadGameScene : MonoBehaviour
     public void LoadScene()
     {
         SceneManager.LoadScene("GameScene");
+        
     }
 }
